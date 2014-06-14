@@ -50,7 +50,7 @@
     <p>Don't get hit by their bullets</p>
     <p>Don't touch the aliens</p>
 
-    <br /><br /><br />
+    <br />
     
 <h3>Credits</h3>
     <p>All Contributors to <a href="http://phaser.io">Phaser</a></p>
@@ -60,8 +60,9 @@
     <p>Neale Davidson for this <a href="http://www.pixelsagas.com">font</a></p>
     <br />
     <p><a href="http://minghuazhao.com">Myself</a> for everything else</p>
+    <br />
 </div>
-    
+
     
 <div id="game">
     
@@ -426,7 +427,7 @@ function gameOver(state){
     restartButton.visible = true;
     restartText.visible = 'true';
     
-    if (score > localStorage.getItem("highscore")) {
+    if (score > parseInt(localStorage.getItem('highscore'))) {
         localStorage.setItem('highscore', score);
     }
 
@@ -523,8 +524,8 @@ function restart () {
     stateText.visible = false;
     
     gameLost = false;
-
-    highScoreText.text = 'highscore : ' + score;
+    
+    highScoreText.text = 'highscore : ' + localStorage.getItem('highscore');
     
     score = 0;
     scoreText.text = scoreString + score;
