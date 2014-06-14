@@ -263,7 +263,7 @@ function create() {
 function spawnAlien() {
     
     //random spawn point in the x axis
-    spawn_point = game.rnd.integerInRange(game.world.centerX+50, game.world.width);
+    spawn_point = game.rnd.integerInRange(game.world.centerX+50, game.world.width-35);
     if (game.world.centerX % 2) { //if odd
         spawn_point = -spawn_point;
     }
