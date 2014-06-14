@@ -1,9 +1,9 @@
 Fucking Aliens
 ==============
 
-#Kill as many aliens as you can
-Don't get hit by their bullets
-Don't touch the aliens
+Kill as many aliens as you can<br />
+Don't get hit by their bullets<br />
+Don't touch the aliens<br />
 
 ##Credits
 All Contributors to <a href="http://phaser.io">Phaser</a>
