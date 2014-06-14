@@ -216,7 +216,6 @@ function create() {
                                             'Highscore : '+localStorage.getItem('highscore') 
                                             : 'Highscore : 0',
                                         10);
-    
     //  Lives
     lives = game.add.group();
     game.add.bitmapText(10, 40, 'carrier_command', 'Lives', 10);
@@ -448,7 +447,7 @@ function gameOver(state){
     restartButton.visible = true;
     restartText.visible = 'true';
     
-    if (score > localStorage.getItem("highscore")) {
+    if (score > parseInt(localStorage.getItem('highscore'))) {
         localStorage.setItem('highscore', score);
     }
 
@@ -545,8 +544,8 @@ function restart () {
     stateText.visible = false;
     
     gameLost = false;
-
-    highScoreText.text = 'highscore : ' + score;
+    
+    highScoreText.text = 'highscore : ' + localStorage.getItem('highscore');
     
     score = 0;
     scoreText.text = scoreString + score;
