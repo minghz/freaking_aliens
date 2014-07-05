@@ -1,4 +1,4 @@
-Fucking Aliens
+Freaking Aliens
 ==============
 
 Kill as many aliens as you can<br />
